@@ -221,7 +221,7 @@ class Order(db.Model):
 
 class ProductSchema(ma.Schema):
     class Meta:
-        fields = ['prod_id', 'name', 'make', 'year','model', 'color', 'miles' 'image', 'description', 'price', 'quantity']
+        fields = ['prod_id', 'name', 'make', 'year', 'model', 'color', 'miles','image', 'description', 'price', 'quantity']
 
 
 product_schema = ProductSchema() # 1 product
