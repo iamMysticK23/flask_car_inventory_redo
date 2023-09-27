@@ -1,0 +1,75 @@
+<form class="row g-3" method="POST">
+    {{ form.hidden_tag() }}
+ 
+    <div class="col-md-12">
+        {{ form.name.label }}
+        {{ form.name(class='form-control mt-2', placeholder ='Dodge') }}
+        {% for error in form.name.errors %}
+            <span class ="err-msg">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="col-md-12">
+        {{ form.image.label }}
+        {{ form.image(class='form-control mt-2') }}
+    </div>
+    <div class="col-12">
+        {{ form.description.label }}
+        {{ form.description(class='form-control mt-2')}}
+
+    </div>
+</div>
+<div class="col-12">
+    {{ form.make.label }}
+    {{ form.make(class='form-control mt-2', placeholder = 'Journey' )}}
+    {% for error in form.make.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+<div class="col-12">
+    {{ form.year.label }}
+    {{ form.year(class='form-control mt-2', placeholder = '2023' )}}
+    {% for error in form.year.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+<div class="col-12">
+    {{ form.model.label }}
+    {{ form.model(class='form-control mt-2', placeholder = 'SE' )}}
+    {% for error in form.model.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+<div class="col-12">
+    {{ form.color.label }}
+    {{ form.color(class='form-control mt-2', placeholder = 'Red' )}}
+    {% for error in form.color.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+<div class="col-12">
+    {{ form.miles.label }}
+    {{ form.miles(class='form-control mt-2', placeholder = '10,547' )}}
+    {% for error in form.miles.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+<div class="col-12">
+    {{ form.price.label }}
+    {{ form.price(class='form-control mt-2', placeholder = '10,000.00 - do not include $ sign' )}}
+    {% for error in form.price.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+
+<div class="col-6">
+    {{ form.quantity.label }}
+    {{ form.quantity(class='form-control mt-2', placeholder = '10' )}}
+    {% for error in form.quantity.errors %}
+        <span class="err-msg">{{ error }}</span>
+    {% endfor %}
+</div>
+<div class="col-12 p-2 me-2" >
+    {{ form.submit(class='btn btn-warning') }}
+</div>
+
+</form>

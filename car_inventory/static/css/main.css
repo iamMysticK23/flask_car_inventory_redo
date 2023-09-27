@@ -1,0 +1,59 @@
+ /* CSS for the car shop page */
+ 
+ .car_shop-header{
+    background-image: url('https://getwallpapers.com/wallpaper/full/d/b/3/1100206-exotic-cars-wallpapers-1920x1080-hd-for-mobile.jpg');
+    background-size: cover;
+    height: 700px;
+    color: white;    
+}
+
+.car_shop-stats {
+    background-color: rgb(0,0,2) ;
+    color: rgb(251, 205, 0);
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(61, 61, 61);
+}
+
+.navbar{
+    background-color: rgb(0, 0, 2);
+}
+
+.nav-link:a{
+    color: white;
+
+}
+
+.nav-link:hover {
+    color: rgb(244, 191, 19) ;
+}
+
+.err-msg {
+    background-color: rgb(255, 179, 0);
+    color: white;
+    font-weight: bold;
+}
+
+.copyright {
+    color: white;
+    font-weight: bold;
+
+}
+
+.bottom {
+
+    background-color: rgb(0, 0, 2);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 179, 0);
+}
+
+a:hover {
+    color: rgb(144, 124, 182);
+}
+

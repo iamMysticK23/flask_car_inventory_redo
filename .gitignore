@@ -1,0 +1,4 @@
+flask_car_dealership_env
+.env
+migrations
+__pycache__
